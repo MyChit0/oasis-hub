@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oasis | Discord Community</title>
+    <style>
+        :root {
+            --bg-color: #0b0712;
+            --card-bg: #160f24;
+            --accent-orange: #ff9f1c;
+            --accent-pink: #ff477e;
+            --text-main: #f8fafc;
+            --text-muted: #b4a9c7;
+            --discord-purple: #5865F2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            background: radial-gradient(circle at top, #241435 0%, #0b0712 60%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 5rem 1rem 3rem 1rem;
+        }
+
+        .server-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem auto;
+            display: block;
+            box-shadow: 0 0 25px rgba(255, 159, 28, 0.4), 0 0 50px rgba(255, 71, 126, 0.2);
+            border: 2px solid var(--accent-orange);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, var(--accent-orange), var(--accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: var(--accent-orange);
+            margin-bottom: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6572f5, #4752c4);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(88, 101, 242, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(88, 101, 242, 0.6), 0 0 15px rgba(255, 71, 126, 0.3);
+        }
+
+        /* Features/Vibe Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 159, 28, 0.05);
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .card:hover {
+            border-color: rgba(255, 159, 28, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-orange);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="Icon.png" alt="The Oasis Logo" class="server-logo">
+            <h1>The Oasis</h1>
+            <p class="tagline">“Escape the noise. Find your Oasis.”</p>
+            <p class="subtitle">A chill corner of the internet to hang out, meet people, and vibe. Whether you're here to make friends, share interests, or just lurk peacefully — The Oasis is open.</p>
+            <a href="https://discord.gg/ADhVfdkZ36" class="btn" target="_blank">Enter The Oasis</a>
+        </header>
+
+        <main class="grid">
+            <div class="card">
+                <h3>☀️ Relaxed Community</h3>
+                <p>A welcoming, zero-pressure atmosphere built entirely around good vibes and friendly interactions.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🎮 Media &amp; Entertainment</h3>
+                <p>Dedicated channels for gaming meetups, music sharing, premium memes, and late-night text chats.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌅 Cozy Atmosphere</h3>
+                <p>An inclusive space designed intentionally for active members to comfortably unwind after a long day.</p>
+            </div>
+
+            <div class="card">
+                <h3>🗣️ Voice &amp; Events</h3>
+                <p>Jump into casual VC hangouts, participate in community events, or just sit back and stream with friends.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 The Oasis. This website is not officially affiliated with Discord Inc.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
